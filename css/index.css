@@ -1,0 +1,477 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+    background-color: #BC4ED8;
+    font-family: "Jersey 25", serif;
+}
+
+
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+#logo{
+    font-size: 1.5rem;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .flex{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+.menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn-menu{
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 40px;           
+    height: 40px;          
+    background: none;
+}
+
+#nav.active .container{
+    display: block;
+}
+
+#nav.active #menu{
+    display: flex;
+}
+
+#nav.active #btn-menu{
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 20rem;
+}
+
+#hamb {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+#hamb::before,
+#hamb::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    border-radius: 20px;
+}
+
+#hamb::before {
+    top: -8px;
+}
+
+#hamb::after {
+    top: 8px;
+}
+
+#nav.active #hamb{
+    background: none;
+}
+
+#nav.active #hamb::before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: #00064B;
+    margin-top: 2.5rem;
+    margin-left: -11rem;
+}
+
+#nav.active #hamb::after {
+    top: 0;
+    transform: rotate(-45deg); 
+    background-color: #00064B;
+    margin-top: 2.5rem;
+    margin-left: -11rem;
+}
+
+.btn-acc{
+    display: flex;
+    width: 24rem;
+    justify-content: flex-end;
+    margin: 0 5rem;
+}
+
+.btn-acc button{
+    margin-left: 2rem;
+    padding: 0.3rem 2rem;
+    border-radius: 7.95px;
+    border: none;
+    font-family: "Jersey 25", serif;
+    text-transform: uppercase;
+    font-size: 19.96px;
+}
+
+#btn-reg{
+    background-color: #00064B;
+    color: white;
+}
+
+#nav.active #btn-log{
+    background-color: #00064B;
+    color: white;
+}
+
+#btn-log{
+    background-color: white;
+    color: #BC4ED8;
+}
+
+
+.btn-acc button:hover{
+    cursor: pointer;
+}
+
+.soc-media{
+    display: flex;
+    list-style: none;
+    gap: .6rem;
+    align-items: center;
+}
+
+#nav.active .btn-acc{
+    position: absolute;
+    margin-top: 30rem;
+}
+
+#nav.active .menu{
+    background-color: #00064B;
+}
+
+#nav.active a{
+    color: white;
+    font-size: 27px;
+    margin-left: 2rem;
+}
+
+#nav.active .acc-soc{
+    margin: 5rem;
+}
+
+.acc-soc{
+    display: flex;
+    align-items: center;
+}
+
+#sch{
+    display: none;
+}
+
+.container-imp {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    color: #4b0082;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #3a0068;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 5rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #00064B;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 28rem;
+    cursor: default;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3a0068;
+  }
+  
+  .btn-secondary {
+    background-color: #7F00B2;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #a3136d;
+  }
+
+  
+.container_imp p{
+  padding-top: 2rem;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.info-benef{
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.info-cards{
+  display: flex;
+}
+
+.info-benef li{
+  list-style: none;
+}
+
+/* Estilo geral do rodapé */
+footer {
+  background-color: #8b3fb0; /* Cor de fundo */
+  padding: 20px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+footer img {
+  height: 50px;
+}
+
+/* Menu de navegação */
+.menu-footer {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #4C007D;
+  background: none;
+
+}
+
+.menu-footer li a {
+  text-decoration: none;
+  color: #00064B;/* Texto preto */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu-footer li a:hover {
+  color: #fff; /* Texto branco ao passar o mouse */
+}
+
+/* Redes sociais */
+.soc-media-footer {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+
+}
+
+.soc-media-footer li a img {
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.soc-media-footer li a img:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Botão de "Voltar ao topo" */
+footer button {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Ícone de seta */
+footer button::before {
+  content: "↑"; /* Seta para cima */
+  font-size: 16px;
+}
+
+.see-all {
+  background-color: rgba(217, 217, 217, 0.63);
+}
+
+.see-all-button {
+  width: 100%;
+  height: 74px;
+  background-color: #00064B;
+  color: white;
+  border-radius: 20px;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+/* Seção de emblemas */
+.badges-section {
+  width: 100%;
+  height: 281px;
+  background-color: #BC4ED8;
+  text-align: center;
+  color: #4C007D;
+  font-size: 25px;
+  text-align: left;
+  padding: 20px 0;
+}
+
+
+/* Seção de explorar tópicos */
+.explore-section {
+  width: 100%;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.explore-section h2 {
+  font-size: 35px;
+  color: #00064B;
+  text-align: center;
+  padding: 3rem;
+}
+
+.explore-card {
+  width: 100%;
+  height: 99px;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-card:nth-child(2) {
+  background-color: #4C007D;
+}
+
+.explore-card:nth-child(3) {
+  background-color: #7F00B2;
+}
+
+.explore-card:nth-child(4) {
+  background-color: #BC4ED8;
+}
+
+/* Painel de controle do aluno */
+.student-panel {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.student-panel h2 {
+  font-size: 51px;
+  color: white;
+  text-align: center;
+}
+
+.panel-card {
+  background-color: #BC4ED8;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.panel-card h3 {
+  font-size: 35px;
+  color: white;
+}
+
+.view-all {
+  width: 156px;
+  height: 69px;
+  margin-top: 10px;
+  background-color: #00064B;
+  color: white;
+  border-radius: 18px;
+  font-size: 31px;
+  cursor: pointer;
+}

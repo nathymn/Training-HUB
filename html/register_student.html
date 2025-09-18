@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Synergy</title>
+    <link rel="stylesheet" href="../css/register_student.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="menu" id="menu">
+        <ul class="menu" id="menu">
+            <li><a href="#" class="active">ALUNO</a></li>
+            <li><a href="register_teacher.html">PROFESSOR</a></li>
+            <li><a href="register_curator.html">CURADOR</a></li>
+            <button id="btn-menu"><span id="hamb"></span></button> 
+        </ul>
+    </section>
+    <section class="container">
+        <a href="./index.html"><img src="../img/logo_neg.svg" alt="Logo Synergy"></a>
+        <p>Já tem cadastro? <a href="./login.html">Acesse sua conta!</a></p>
+    
+        <h2>Vamos começar sua jornada!</h2>
+    
+        <form class="form-cadastro" name="formCadAluno" id="formCadAluno" method="post" action="register_student.php">
+            <!-- Coluna esquerda -->
+            <label for="txt-name">Nome completo:</label>
+            <input type="text" id="txtname" name="txt-name" required>
+
+            <label for="numb-nasc">Data de nascimento:</label>
+            <input type="date" id="numbnasc" name="numb-nasc" required>
+
+            <label for="txt-resp-name" class="responsavel">Nome do responsável:</label>
+            <input type="text" id="txt-resp-name" name="txt-resp-name">
+
+            <label for="numb-resp-nasc" class="responsavel-nasc">Data de nascimento do responsável:</label>
+            <input type="date" id="numb-resp-nasc" name="numb-resp-nasc">
+
+            <label for="em-resp" class="responsavel-tel">E-mail do responsável:</label>
+            <input type="email" id="emresp" name="em-resp">
+
+            <!-- Coluna direita -->
+            <label for="numb-cpf">CPF:</label>
+            <input type="text" id="numbcpf" name="numb-cpf" required oninput="formatarCPF(this)" maxlength="11">
+
+            <label for="numb-tel">Telefone:</label>
+            <input type="tel" id="numbtel" name="numb-tel" required oninput="formatarTelefone(this)" maxlength="15">
+
+            <label for="emailAluno">E-mail:</label>
+            <input type="email" id="emailAluno" name="emailAluno" required>
+
+            <label for="pass-acc">Digite uma senha:</label>
+            <input type="password" id="passacc" name="pass-acc" required minlength="5" maxlength="10">
+
+            <!-- Botão -->
+            <input type="submit" id="btn-makeacc" value="Criar conta" onclick="btnSendOnClickAluno()">
+        </form>
+    </section>
+
+    <script src="../js/register_perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Jersey 25", serif;
+  }
+  
+  .nav{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .menu_nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu_nav a{
+    text-decoration: none;
+    color: #00064B;
+  
+  }
+  
+  .menu_nav li{
+    list-style: none;  
+    padding: 0 1rem;  
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+
+/* Container principal */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 0;
+
+}
+
+.btn-con{
+    border-radius: 20px;
+    height: 2rem;
+    margin: 2rem 0 2rem 9rem;
+    border: none;
+    background-color: #00064B;
+    color: white;
+    padding: 0 1rem;
+}
+
+/* Seção de botões principais */
+.button-section {
+    width: 496px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    width: 100%;
+    height: 110px;
+    border-radius: 20px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Jersey 25', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.access {
+    background-color: #4C007D;
+}
+
+.continue {
+    background-color: #7F00B2;
+}
+
+.progress,
+.explore {
+    background-color: #BC4ED8;
+}
+
+/* Seção de cursos em andamento */
+.in-progress-section {
+    width: 1224px;
+    height: 671px;
+    background-color: #00064B;
+    padding: 20px;
+    color: #F988FF;
+}
+
+.in-progress-section .header {
+    margin-bottom: 20px;
+}
+
+.in-progress-section h2 {
+    font-size: 38px;
+    font-family: 'Jersey 25', sans-serif;
+}
+
+.line {
+    width: 620px;
+    height: 2px;
+    background-color: #F988FF;
+    margin: 10px 0;
+}
+
+
+.container_courses {
+    width: 80%;
+    margin-top: 5rem;
+    padding: 1rem 8.4rem 6rem 8.4rem;
+    text-align: center;
+    background-color:  #0a0b36;
+  }
+  
+  .title {
+    color: #e869d0;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .courses {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course,
+  .view-all {
+    width: 17rem;
+    height: 396.19px;
+    background-color: #c4c4c4;
+    border-radius: 8px;
+  }
+  
+  .view-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6e6e8b;
+  }
+  
+  .view-all button {
+    background-color: #0a0b36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .view-all button:hover {
+    background-color: #e869d0;
+  }
+  
+  .container_plans {
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .title {
+    color: #4e007c;
+    font-size: 1.5rem;
+    margin: 4rem 0;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 2px solid #a56bbd;
+    margin: 10px 0 40px;
+  }
+  
+  .plans {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .plan {
+    width: 17rem;
+    height: 150px;
+    background-color: #4e007c;
+    border-radius: 8px;
+  }
+  
+  .view-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 80px;
+    background-color: #e5e5e5;
+    border-radius: 8px;
+  }
+  
+  .view-all button {
+    background-color: #0a0b36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .view-all button:hover {
+    background-color: #4e007c;
+    color: #fff;
+  }
+  
+  /* Estilo geral do rodapé */
+  footer {
+    background-color: #8b3fb0; /* Cor de fundo */
+    padding: 20px 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  footer img {
+    height: 50px;
+  }
+  
+  /* Menu de navegação */
+  .menu-footer {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #4C007D;
+  }
+  
+  .menu-footer li a {
+    text-decoration: none;
+    color: #00064B;/* Texto preto */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .menu-footer li a:hover {
+    color: #fff; /* Texto branco ao passar o mouse */
+  }
+  
+  /* Redes sociais */
+  .soc-media-footer {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .soc-media-footer li a img {
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .soc-media-footer li a img:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+  }
+  
+  /* Botão de "Voltar ao topo" */
+  footer button {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+footer button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Ícone de seta */
+footer button::before {
+    content: "↑"; /* Seta para cima */
+    font-size: 16px;
+}
+
+.see-all {
+    background-color: rgba(217, 217, 217, 0.63);
+}
+
+.see-all-button {
+    width: 100%;
+    height: 74px;
+    background-color: #00064B;
+    color: white;
+    border-radius: 20px;
+    font-size: 33px;
+    cursor: pointer;
+}
+
+/* Seção de emblemas */
+.badges-section {
+    width: 100%;
+    height: 281px;
+    background-color: #BC4ED8;
+    text-align: center;
+    color: #4C007D;
+    font-size: 25px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+
+/* Seção de explorar tópicos */
+.explore-section {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.explore-section h2 {
+    font-size: 35px;
+    color: #00064B;
+    text-align: center;
+    padding: 3rem;
+}
+
+.explore-card {
+    width: 100%;
+    height: 99px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-card:nth-child(2) {
+    background-color: #4C007D;
+}
+
+.explore-card:nth-child(3) {
+    background-color: #7F00B2;
+}
+
+.explore-card:nth-child(4) {
+    background-color: #BC4ED8;
+}
+
+/* Painel de controle do aluno */
+.student-panel {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.student-panel h2 {
+    font-size: 51px;
+    color: white;
+    text-align: center;
+}
+
+.panel-card {
+    background-color: #BC4ED8;
+    border-radius: 18px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.panel-card h3 {
+    font-size: 35px;
+    color: white;
+}
+
+.view-all {
+    width: 156px;
+    height: 69px;
+    margin-top: 10px;
+    background-color: #00064B;
+    color: white;
+    border-radius: 18px;
+    font-size: 31px;
+    cursor: pointer;
+}

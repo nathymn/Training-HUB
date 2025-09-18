@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <header id="header">
+        <div class="container" id="container">
+
+            <div class="flex">
+                
+                    <a href="./index.html"> <img src="../img/index/logo.svg" alt="logo Synergy"></a>
+
+                    <nav id="nav">
+
+                        <button id="btn-menu"><span id="hamb"></span></button>
+
+                        <ul class="menu" id="menu">
+                            <li><a href="./cursos.html">Cursos</a></li>
+                            <li><a href="../html/index.html">Nosso trabalho</a></li>
+                            <li><a href="./quem_somos.html">Quem somos</a></li>
+                        </ul>
+
+                    </nav>
+
+
+                
+            </div> <!--flex-->
+            
+            <div class="acc-soc" id="acc-soc">
+
+                <input type="search" name="sch" id="sch">
+            
+                <div class="btn-acc" id="btn-acc">
+
+                    <button id="btn-reg" onclick="register()" >Criar conta</button>
+                    <button id="btn-log" class="btn-log" onclick="login()" >Login</button>
+
+                </div>
+
+                <ul class="soc-media">
+                    <li><a href="#"><img src="../img/index/linkedin.svg" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="../img/index/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../img/index/contact.svg" alt="Contato"></a></li>
+                </ul>
+
+                    
+            </div>
+
+        </div> <!--- container --->
+
+        
+    </header>
+
+    <div class="container_imp" style="margin: 12rem 3rem 3rem 3rem;">
+        <header>
+          <h1 style="text-align: center; padding: 2rem;">COMO IMPACTAMOS O MUNDO</h1>
+        </header>
+        <main>
+          <div class="card">
+            <img src="../img/People.svg" alt="people">
+            <p>Oportunidade de networking</p>
+          </div>
+          <div class="card">
+            <img src="../img/quadro.svg" alt="quadro">
+            <p>Estude de qualquer lugar</p>
+          </div>
+          <div class="card">
+            <img src="../img/form.svg" alt="estudo">
+            <p>Conhecimento de qualidade</p>
+          </div>
+        </main>
+          <button class="btn-primary">VENHA ESTUDAR CONOSCO</button>
+          <button class="btn-secondary" onclick="window.location.href='../html/register.html'">CRIAR CONTA</button>
+        </div>
+
+        <section class="info-benef" style="margin: 2rem;">
+          <h1>Seus benefícios</h1>
+          <div class="info-cards">
+              <div class="ben-stud" style="margin: 4rem;">
+                  <h2>Aluno</h2>
+                  <ul>
+                      <li><img src="" alt=""><p>Acesse gratuitamente conhecimentos importantes.</p></li>
+                      <li><img src="" alt=""><p>Interaja com alunos de todo o mundo.</p></li>
+                      <li><img src="" alt=""><p>Receba certificado de participação de cursos selecionados.</p></li>
+                  </ul>
+                  <h3>E muito mais!</h3>
+              </div>
+              <div class="ben-teacher" style="margin: 4rem;">
+                  <h2>Professor</h2>
+                  <ul>
+                      <li><img src="" alt=""><p>Compartilhe conhecimento para além da sala de aula.</p></li>
+                      <li><img src="" alt=""><p>Interaja com alunos de todo o mundo.</p></li>
+                      <li><img src="" alt=""><p>Se engaje com um projeto social e receba certificado de participação.</p></li>
+                  </ul>
+                  <h3>E muito mais!</h3>
+              </div>
+              <div class="ben-curator" style="margin: 4rem;">
+                  <h2>Curador</h2>
+                  <ul>
+                      <li><img src="" alt=""><p>Receba horas complementares para sua graduação.</p></li>
+                      <li><img src="" alt=""><p>Interaja com pessoas de todo o mundo.</p></li>
+                      <li><img src="" alt=""><p>Se engaje com um projeto social e receba certificado de participação.</p></li>
+                  </ul>
+                  <h3>E muito mais!</h3>
+              </div>
+          </div>
+      </section>
+      
+
+    <script src="../js/index.js"></script>
+</body>
+<footer>
+  <div class="footer-content">
+      <img src="../img/logo_neg.svg" alt="Logo Synergy">
+      
+      <ul class="menu-footer" id="menu-footer">
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="../html/index.html">Nosso trabalho</a></li>
+          <li><a href="./quem_somos.html">Quem somos</a></li>
+      </ul>
+
+      <ul class="soc-media-footer">  
+          <li><a href="#"><img src="../img/Linkedin_neg.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://www.instagram.com/synergy.school.fy/"><img src="../img/Instagram_neg.svg" alt="Instagram"></a></li>
+          <li><a href="#"><img src="../img/tele_neg.svg" alt="Contato"></a></li>
+      </ul>
+
+      <button id="scrollToTop"></button> <!-- botão para ir ao topo da página -->
+  </div>
+</footer>
+</html>

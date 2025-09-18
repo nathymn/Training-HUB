@@ -1,0 +1,67 @@
+<?php
+session_start();
+if (!isset($_SESSION['logins_id']) || $_SESSION['user_type'] != 1) {
+    header("Location: login_data.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Aluno</title>
+    <link rel="stylesheet" href="../css/assistir_aula.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav">
+            <a href="./index.html"> <img src="../img/logo_indexfunc.svg" alt="logo Synergy"></a>
+            <ul class="menu_nav">
+                <li><a href="../html/cursos.html">Cursos disponíveis</a></li>
+                <li><a href="#">Meus cursos</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Minhas medalhas</a></li>
+            </ul>
+        </div>
+
+        <button class="btn-con">Aprofundar conhecimento</button>
+        <a style="margin: 1rem;" href="#"> <img src="../img/Profile.svg " alt="logo Synergy"></a>
+
+    </header>
+    
+    <section class="watch">
+        <div class="aula">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ixNa6N9M_U?si=an5fQhHoUs6HlLx3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="../img/logo_neg.svg" alt="Logo Synergy">
+            
+            <ul class="menu-footer" id="menu-footer">
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="../html/index.html">Nosso trabalho</a></li>
+                <li><a href="./quem_somos.html">Quem somos</a></li>
+            </ul>
+    
+            <ul class="soc-media-footer">  
+                <li><a href="#"><img src="../img/index/logo.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/synergy.school.fy/"><img src="../img/Instagram_neg.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../img/tele_neg.svg" alt="Contato"></a></li>
+            </ul>
+    
+            <button id="scrollToTop"></button> <!-- botão para ir ao topo da página -->
+        </div>
+    </footer>
+
+    
+    <script src="../js/index_perfil.js"></script>
+</body>
+</html>

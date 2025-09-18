@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jersey 25", serif;
+}
+ /*CABEÇALHO PADRÃO*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.menu_nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_nav a{
+    text-decoration: none;
+    color: #00064B;
+
+}
+
+.menu_nav li{
+    list-style: none;  
+    padding: 0 1rem;  
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.user-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+}
+/*BOTÕES PARA OS RELATÓRIOS */
+
+.container {
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  
+  
+}
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #002b80;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 9px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+/* Estilo de botões gerais */
+.button {
+  display: block; /* Garante que cada botão fique em sua própria linha */
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.section1 .button {
+  background-color: #00064B; 
+}
+.section1 .button:hover {
+  background-color: #2d3482;
+}
+
+
+.section2 .button {
+  background-color: #8b3fb0; 
+}
+.section2 .button:hover {
+  background-color: #d581ff;
+}
+
+/* Botões da Section 3 */
+.section3 .button {
+  background-color: #BC4ED8; 
+}
+.section3 .button:hover {
+  background-color: #8c00af;
+}
+
+
+/* Estilo geral do rodapé */
+footer {
+    background-color: #8b3fb0; /* Cor de fundo */
+    padding: 20px 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  footer img {
+    height: 50px;
+  }
+  
+  /* Menu de navegação */
+  .menu-footer {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-footer li a {
+    text-decoration: none;
+    color: #000; /* Texto preto */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .menu-footer li a:hover {
+    color: #fff; /* Texto branco ao passar o mouse */
+  }
+  
+  /* Redes sociais */
+  .soc-media-footer {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .soc-media-footer li a img {
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .soc-media-footer li a img:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+  }
+  
+  /* Botão de "Voltar ao topo" */
+  footer button {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  footer button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Ícone de seta */
+  footer button::before {
+    content: "↑"; /* Seta para cima */
+    font-size: 16px;
+  }

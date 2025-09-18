@@ -1,0 +1,394 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+    background-color: #00064B;
+    font-family: "Jersey 25", serif;
+}
+
+
+header .flex{
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+.menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn-menu{
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 40px;           
+    height: 40px;          
+    background: none;
+}
+
+#nav.active .container{
+    display: block;
+}
+
+#nav.active #menu{
+    display: flex;
+    background-color: #BC4ED8;
+}
+
+#nav.active #btn-menu{
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 8rem;
+}
+
+#hamb {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+#hamb::before,
+#hamb::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    border-radius: 20px;
+}
+
+#hamb::before {
+    top: -8px;
+}
+
+#hamb::after {
+    top: 8px;
+}
+
+#nav.active #hamb{
+    background: none;
+}
+
+#nav.active #hamb::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#nav.active #hamb::after {
+    top: 0;
+    transform: rotate(-45deg); 
+}
+
+#nav.active a{
+    color: white;
+    font-size: 27px;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.acess{
+    margin: 1rem 0 ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.student-login{
+    background-color: #BC4ED8;
+    padding: 4rem;
+    width: 25rem;
+    border-radius: 19px;
+    text-align: center;
+}
+
+.student-login button{
+    background-color: white;
+    color: #BC4ED8;
+    border-radius: 19px;
+    border: none;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.student-login a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.teacher-login{
+    background-color: white;
+    padding: 4rem;
+    width: 25rem;
+    border-radius: 19px;
+    text-align: center;
+}
+
+.teacher-login button{
+    background-color: #BC4ED8;
+    color: white;
+    border-radius: 19px;
+    border: none;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.teacher-login a{
+    text-decoration: none;
+    color: #BC4ED8;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.curator-login-register{
+    padding: 4rem;
+    width: 40rem;
+    border-radius: 19px;
+    text-align: center;
+    display: flex;
+}
+
+.curator-login-register button{
+    background-color: white;
+    color: #00064B;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem 0;
+    width: 55%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.curator-login-register a{
+    text-decoration: none;
+    color: #BC4ED8;
+    font-size: 20px;
+    text-align: center;
+}
+
+.acess-cur{
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Estilo geral do rodapé */
+footer {
+    background-color: #8b3fb0; /* Cor de fundo */
+    padding: 20px 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  footer img {
+    height: 50px;
+  }
+  
+  /* Menu de navegação */
+  .menu-footer {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #4C007D;
+    background: none;
+  
+  }
+  
+  .menu-footer li a {
+    text-decoration: none;
+    color: #00064B;/* Texto preto */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .menu-footer li a:hover {
+    color: #fff; /* Texto branco ao passar o mouse */
+  }
+  
+  /* Redes sociais */
+  .soc-media-footer {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+  
+  }
+  
+  .soc-media-footer li a img {
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .soc-media-footer li a img:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+  }
+  
+  /* Botão de "Voltar ao topo" */
+  footer button {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  footer button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Ícone de seta */
+  footer button::before {
+    content: "↑"; /* Seta para cima */
+    font-size: 16px;
+  }
+  
+  .see-all {
+    background-color: rgba(217, 217, 217, 0.63);
+  }
+  
+  .see-all-button {
+    width: 100%;
+    height: 74px;
+    background-color: #00064B;
+    color: white;
+    border-radius: 20px;
+    font-size: 33px;
+    cursor: pointer;
+  }
+  
+  /* Seção de emblemas */
+  .badges-section {
+    width: 100%;
+    height: 281px;
+    background-color: #BC4ED8;
+    text-align: center;
+    color: #4C007D;
+    font-size: 25px;
+    text-align: left;
+    padding: 20px 0;
+  }
+  
+  
+  /* Seção de explorar tópicos */
+  .explore-section {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .explore-section h2 {
+    font-size: 35px;
+    color: #00064B;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .explore-card {
+    width: 100%;
+    height: 99px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .explore-card:nth-child(2) {
+    background-color: #4C007D;
+  }
+  
+  .explore-card:nth-child(3) {
+    background-color: #7F00B2;
+  }
+  
+  .explore-card:nth-child(4) {
+    background-color: #BC4ED8;
+  }
+  
+  /* Painel de controle do aluno */
+  .student-panel {
+    width: 100%;
+    margin: 30px 0;
+  }
+  
+  .student-panel h2 {
+    font-size: 51px;
+    color: white;
+    text-align: center;
+  }
+  
+  .panel-card {
+    background-color: #BC4ED8;
+    border-radius: 18px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .panel-card h3 {
+    font-size: 35px;
+    color: white;
+  }
+  
+  .view-all {
+    width: 156px;
+    height: 69px;
+    margin-top: 10px;
+    background-color: #00064B;
+    color: white;
+    border-radius: 18px;
+    font-size: 31px;
+    cursor: pointer;
+  }

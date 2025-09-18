@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Synergy</title>
+    <link rel="stylesheet" href="../css/login_data.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="login_data">
+        <a href="./index.html"><img src="../img/logo_neg.svg" alt="Logo Synergy"></a>
+        <p>Não tem cadastro?<a href="../html/register.html">Cadastre-se</a></p>
+        <h2>Entre e retome suas atividades :)</h2>
+
+        <form name="formLogin" id="formLogin" method="post" action="login_data.php">
+            <div class="data">
+                <label for="emailLog">E-mail:</label>
+                <input type="email" name="emailLog" id="emailLog" placeholder="email@exemplo.com" required>
+
+                <label for="passLog">Senha:</label>
+                <input type="password" name="passLog" id="passLog" placeholder="Digite sua senha" required>
+
+                <a href="recsenha.php">Esqueci a senha</a> <!-- Link para recuperação de senha -->
+
+                <button type="submit" id="btn-acc">Entrar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

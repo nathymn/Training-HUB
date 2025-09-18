@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #00064B;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rec-sen{
+    background-color: white;
+    width: 30rem;
+    align-items: center;
+    padding: 10rem;
+    margin: 5rem 18rem;
+    text-align: left;
+    border-radius: 20px;
+    color: #00064B;
+}
+
+.rec-sen input{
+    width: 468px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+
+}
+
+.btn-rec{
+    padding: 2rem;
+    background-color: #7F00B2;
+    color: white;
+    border-color: #00064B;
+    font-weight: bolder;
+}

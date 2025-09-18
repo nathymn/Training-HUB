@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Synergy</title>
+    <link rel="stylesheet" href="../css/register_teacher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <section class="menu">
+        <ul>
+            <li><a href="register_student.html">ALUNO</a></li>
+            <li><a href="#" class="active">PROFESSOR</a></li>
+            <li><a href="register_curator.html">CURADOR</a></li>
+            <button id="btn-menu"><span id="hamb"></span></button>
+        </ul>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <section class="container">
+        <a href="./index.html"><img src="../img/logo_neg.svg" alt="Logo Synergy"></a>
+        <p>Já tem cadastro? <a href="./login.html">Acesse sua conta!</a></p>
+
+        <h2>Vamos começar sua jornada!</h2>
+
+        <!-- Formulário -->
+        <form class="form-cadastro" id="formTeacher" name="formTeacher" method="post" action="register_teacher.php">
+            <!-- Coluna esquerda -->
+            <label for="txtNameTeacher">Nome completo:</label>
+            <input type="text" id="txtNameTeacher" name="txtNameTeacher" required>
+
+            <label for="dateNascTeacher">Data de nascimento:</label>
+            <input type="date" id="dateNascTeacher" name="dateNascTeacher" required>
+
+            <label for="emailTeacher">E-mail:</label>
+            <input type="email" id="emailTeacher" name="emailTeacher" required>
+
+            <label for="passAccTeacher">Digite uma senha:</label>
+            <input type="password" id="passAccTeacher" name="passAccTeacher" required minlength="5" maxlength="10">
+
+            <!-- Coluna direita -->
+            <label for="txtCpfTeacher">CPF:</label>
+            <input type="text" id="txtCpfTeacher" name="txtCpfTeacher" required oninput="formatarCPF(this)" maxlength="11">
+
+            <label for="numbTelTeacher">Telefone:</label>
+            <input type="tel" id="numbTelTeacher" name="numbTelTeacher" required oninput="formatarTelefone(this)" maxlength="15">
+
+
+            <!-- Upload de arquivo -->
+            <div class="file-upload">
+                <label for="filePortfolio">Selecione um arquivo</label>
+                <input type="file" id="filePortfolio" name="filePortfolio" accept=".pdf" title="O arquivo deve ser em formato PDF.">
+            </div>
+            <br>
+            <label for="txtLink">Espaço reservado para link adicional (opcional):</label>
+            <input type="url" id="txtLink" name="txtLink" placeholder="https://">
+
+            <!-- Informações sobre envio -->
+            <div class="info">
+                <p><strong>Sobre o envio:</strong></p>
+                <ul>
+                    <li>Deve ser enviado em formato PDF.</li>
+                    <li>Deve conter todos os detalhes do exercício (ex.: calendário ou tópicos).</li>
+                    <li>Pode conter links de aulas gravadas e postadas.</li>
+                </ul>
+            </div>
+
+            <!-- Botão -->
+            <input type="submit" id="btnCreateAcc" value="Enviar solicitação" onclick="btnSendOnClickProfessor()">
+        </form>
+    </section>
+
+    <script src="../js/register_perfil.js"></script>
+</body>
+</html>

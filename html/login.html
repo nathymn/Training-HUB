@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Synergy</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <div class="flex">
+                
+            <a href="./index.html"> <img src="../img/index/logo.svg" alt="logo Synergy"></a>
+
+            <nav id="nav">
+
+                <button id="btn-menu"><span id="hamb"></span></button>
+
+                <ul class="menu" id="menu">
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="../html/index.html">Nosso trabalho</a></li>
+                    <li><a href="./quem_somos.html">Quem somos</a></li>
+                </ul>
+
+            </nav>
+         </div> <!--flex-->
+
+    </header>
+
+    <section class="acess">
+
+        <div class="student-login">
+
+            <button id="log" class="login-click" type="button" onclick="window.location.href='../html/login_data.html'">Sou Aluno</button> <br>
+
+        </div>
+
+        <div class="teacher-login">
+
+            <button id="log" class="login-click" type="button" onclick="window.location.href='../html/login_data.html'"">Sou Professor </button> <br>
+            
+        </div>
+
+    </section>
+
+    <section class="acess-cur">
+
+        <div class="curator-login-register">
+            <button id="log" class="login-click" style="margin-right: 1rem;" type="button" onclick="window.location.href='../html/login_data.html'">Sou Curador</button>
+            <button id="reg" class="cad-click" type="button" onclick="window.location.href='../html/register.html'">Criar conta</button>
+        </div>
+
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <img src="../img/logo_neg.svg" alt="Logo Synergy">
+            
+            <ul class="menu-footer" id="menu-footer">
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./nosso_trabalho.html">Nosso trabalho</a></li>
+                <li><a href="./quem_somos.html">Quem somos</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+    
+            <ul class="soc-media-footer">  
+                <li><a href="#"><img src="../img/Linkedin_neg.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/synergy.school.fy/"><img src="../img/Instagram_neg.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../img/tele_neg.svg" alt="Contato"></a></li>
+            </ul>
+    
+            <button id="scrollToTop"></button> <!-- botão para ir ao topo da página -->
+        </div>
+    </footer>
+
+
+    <script src="../js/login.js"></script>
+    <script src="../js/index_perfil.js"></script>
+</body>
+</html>

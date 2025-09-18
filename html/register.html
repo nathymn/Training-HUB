@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Synergy</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="./index.html"><img src="../img/index/logo.svg" alt="Logo Synergy"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Seja bem-vinda/o a Synergy!</h1>
+            <p>Ficamos felizes por saber do seu interesse em</p>
+            <p>participar desse universo de aprendizado!</p>
+            <h2>Selecione seu tipo de perfil</h2>
+        </section>
+
+        <section class="profiles">
+            <!-- Estudante -->
+            <div class="profile-card student" onclick="location.href='./register_student.html';">
+                <button>
+                    <img src="../img/Icone dos Perfis/Icon-Aluno.png" alt="Estudante">
+                    <span>QUERO ESTUDAR</span>
+                </button>
+            </div>
+
+            <!-- Professor -->
+            <div class="profile-card teacher" onclick="location.href='./register_teacher.html';">
+                <button>
+                    <img src="../img/Icone dos Perfis/Icon-Professor.png" alt="Professor">
+                    <span>QUERO ENSINAR</span>
+                </button>
+            </div>
+
+            <!-- Supervisor -->
+            <div class="profile-card supervisor" onclick="location.href='./register_curator.html';">
+                <button>
+                    <img src="../img/Icone dos Perfis/Icon-Curador.png" alt="Supervisor">
+                    <span>QUERO SUPERVISIONAR</span>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

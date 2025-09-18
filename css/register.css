@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #00064B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    background-color: #FFFFFF;
+    width: calc(250px * 3); /* Alinha o tamanho ao total dos perfis */
+    max-width: 100%;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 20px 0 0 0; /* Remove margem inferior */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+.welcome h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4C109E;
+    margin: 10px 0;
+}
+
+.welcome p {
+    font-size: 16px;
+    color: #4C109E;
+    margin: 5px 0 0 0;
+}
+
+.welcome h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4C109E;
+    margin-top: 20px;
+}
+
+/* Profiles Section */
+.profiles {
+    display: flex;
+    justify-content: space-between; /* Remove espaçamento entre cards */
+    flex-wrap: wrap;
+    width: calc(250px * 3); /* Mesma largura do welcome */
+    max-width: 100%;
+    box-sizing: border-box; /* Para evitar problemas com padding */
+}
+
+.profile-card {
+    width: 250px; /* Mantém tamanho */
+    height: 300px; /* Mantém tamanho */
+    background-color: #4C109E;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-card button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-card.student button img {
+    width: 170px;
+    height: 150px;
+}
+
+.profile-card.teacher button img {
+    width: 170px;
+    height: 150px;
+}
+
+.profile-card.supervisor button img {
+    width: 170px;
+    height: 150px;
+}
+
+.profile-card.student {
+    background-color: #BC4ED8;
+}
+
+.profile-card.teacher {
+    background-color: #6C4BD6;
+}
+
+.profile-card.supervisor {
+    background-color: #5335B8;
+}
