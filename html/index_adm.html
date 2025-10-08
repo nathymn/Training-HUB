@@ -1,0 +1,128 @@
+<?php
+session_start();
+// A lógica PHP para autenticação e verificação de tipo de usuário (Administrador)
+if (!isset($_SESSION['logins_id']) || $_SESSION['user_type'] != 3) {
+    header("Location: login_data.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Training HUB</title>
+    <link rel="stylesheet" href="../css/index_curator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav">
+                                <a href="./index.html"> <img src="../img/logo_indexfunc.svg" alt="logo Training HUB"></a>
+                <ul class="menu_nav">
+                                        <li><a href="../html/dashboard.html">Dashboard Gerencial</a></li>
+                    <li><a href="#documentos">Verificação de Documentos</a></li>
+                    <li><a href="#moderacao">Moderação de Conteúdo</a></li>
+                </ul>
+            </div>
+            <a style="margin: 1rem;" href="#"> <img src="../img/Profile.svg " alt="Perfil do Administrador"></a>
+        </header>
+
+        <div class="botoes"> 
+                        <a href="#" class="button">Gerenciar Usuários (Suspensão)</a>
+            <a href="" class="button">Gerenciar Especialidades (CRUD)</a>         </div>
+
+
+        
+        <div class="container_classes" id="documentos">
+                    <h1 class="title">Documentos Pendentes de Verificação (CREF)</h1>
+          <hr class="divider">
+          <div class="classes">
+
+            <div class="class" id="doc-1">
+              <p>Professor João Silva - CREF</p>
+              <button class="accept-button">Verificar</button>
+              <button class="reject-button">Recusar</button>
+            </div>
+            <div class="class" id="doc-2">
+              <p>Professor Maria Souza - Certificado</p>
+              <button class="accept-button">Verificar</button>
+              <button class="reject-button">Recusar</button>
+            </div>
+            <div class="class" id="doc-3">
+              <p>Professor Pedro Santos - CREF</p>
+              <button class="accept-button">Verificar</button>
+              <button class="reject-button">Recusar</button>
+            </div>
+            <div class="view-all" style="height: 469px;">
+              <button>Ver Todos os Documentos</button>
+            </div>
+          </div>
+        </div>
+
+    
+          <div class="container_complaints" id="moderacao">
+                        <h1 class="title">Novas Denúncias de Conteúdo (RF-028)</h1>
+            <hr class="divider">
+            <div class="complaints">
+              <div class="complaint">Denúncia de Avaliação Abusiva</div>
+              <div class="complaint">Denúncia de Perfil Inapropriado</div>
+              <div class="complaint">Denúncia de Vaga Falsa</div>
+              <div class="view-all">
+                <button>Acessar Painel de Moderação</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container_curatores">
+                        <h1 class="title">Métricas Chave do Sistema (Dashboard)</h1>
+            <hr class="divider">
+            <div class="curators">
+              <div class="curator">Professores Ativos: 50</div>
+              <div class="curator">Total de Candidaturas: 9</div>
+              <div class="curator">Sessões Concluídas (Mês)</div>
+              <div class="view-all">
+                <button>Ver Dashboard Completo</button>
+              </div>
+            </div>
+          </div>
+        
+
+        <section class="reports" style="margin: 1rem;"> 
+                        <h2>Exportação de Dados (CSV)</h2>
+            <div class="report-center">
+                <ul class="rel" id="rel">
+                    <li><a href="../html/export.html">Exportar Relatório de Sessões e Transações</a></li>
+                </ul>
+            </div>
+        </section>
+
+    
+   
+        <footer>
+          <div class="footer-content">
+              <img src="../img/logo_neg.svg" alt="Logo Training HUB">
+              
+              <ul class="menu-footer" id="menu-footer">
+                  <li><a href="#">Termos de Serviço</a></li>
+                  <li><a href="#">Política de Privacidade</a></li>
+                  <li><a href="#">Central de Ajuda</a></li>
+              </ul>
+      
+              <ul class="soc-media-footer">  
+                  <li><a href="#"><img src="../img/Linkedin_neg.svg" alt="LinkedIn"></a></li>
+                  <li><a href="https://www.instagram.com/synergy.school.fy/"><img src="../img/Instagram_neg.svg" alt="Instagram"></a></li>
+                  <li><a href="#"><img src="../img/tele_neg.svg" alt="Contato"></a></li>
+              </ul>
+      
+              <button id="scrollToTop"></button> 
+          </div>
+      </footer>
+  
+      <script src="../js/index_perfil.js"></script>
+
+   </body>    
+</html>
